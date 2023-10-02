@@ -1,7 +1,5 @@
 class NewsController {
-    constructor() {
-
-    }
+    constructor() {}
 
     // [GET] /news
     index(req, res) {
@@ -10,8 +8,8 @@ class NewsController {
 
     // [GET] /news/:slug
     show(req, res) {
-        res.send('News Detail!')
+        res.send('News Detail!');
     }
 }
 
-module.exports = new NewsController;
+module.exports = new NewsController();
