@@ -1,17 +1,27 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/">Johnny Blog</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="container">
+    <a class="navbar-brand" href="/">Johnny Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/courses/create">Dang khoa hoc</a>
-      </li>
-    </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="https://scontent.fhan3-4.fna.fbcdn.net/v/t1.6435-9/197460889_918988121979160_264710909450078793_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=7a1959&_nc_ohc=rU8NB1xkFPAAX-urj3k&_nc_ht=scontent.fhan3-4.fna&oh=00_AfBhpb95kpsQbVU99zDiQiaXwIIJSfssOLbwTWJDY-_NCg&oe=65471A49" alt="" class="user-avatar">
+            Quan Nguyen
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/courses/create">Dang khoa hoc</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/me/stored/courses">Khoa hoc cua toi</a>
+            <a class="dropdown-item" href="/me/stored/news">Bai viet cua toi</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Dang xuat</a>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

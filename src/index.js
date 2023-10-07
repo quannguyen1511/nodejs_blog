@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const handlebars = require('express-handlebars').engine;
+const methodOverride = require('method-override');
 
 const route = require('./routes');
 const db = require('./config/db');
@@ -20,6 +21,7 @@ app.use(
     }),
 );
 app.use(express.json());
+app.use(methodOverride('_method'));
 // XMLHttpRequest, fetch, axios, ...
 
 // HTTP logger
@@ -30,6 +32,9 @@ app.engine(
     'hbs',
     handlebars({
         extname: '.hbs',
+        helpers: {
+            sum: (a, b) => a + b,
+        },
     }),
 );
 app.set('view engine', 'hbs');
